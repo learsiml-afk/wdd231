@@ -17,6 +17,7 @@ header img{
     display: block;
     width: 100%;
     height: auto;
+    padding-bottom: 5;
 }
 
 header span{
@@ -41,7 +42,7 @@ header span{
     }
 
     .hamburger.show::before{
-        content: "\\0007";
+        content: "\00D7";
         font-size: 2rem;
     }
 
