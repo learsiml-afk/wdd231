@@ -6,7 +6,7 @@
 /*********HEADER*******/
 header{
     display: grid;
-    grid-template-columns: 24px auto 44;
+    grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
     align-items: end;
     border-bottom: solid 1px #ddd;
@@ -28,13 +28,20 @@ header span{
 .hamburger{
     background: none;
     border: none;
+    font-size: 2rem;
     color: gray;
     cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
  
 
-hamburger::after{
+.hamburger::before{
         content: "\2630";
+        font-size: 2rem;
+    }
+
+    .hamburger.show::before{
+        content: "\\0007";
         font-size: 2rem;
     }
 
