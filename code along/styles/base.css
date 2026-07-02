@@ -8,11 +8,33 @@ header{
     display: grid;
     grid-template-columns: 24px auto 44;
     padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
 }
 
 header img{
     display: block;
     width: 100%;
     height: auto;
-
 }
+
+header span{
+    font-size: 1.2rem;
+    color: darkslategrey
+}
+
+/***********HAMBURGER NAVEGATION **************/
+.hamburger{
+    background: none;
+    border: none;
+    color: gray;
+    cursor: pointer;
+}
+ 
+
+hamburger::after{
+        content: "\2630";
+        font-size: 2rem;
+    }
+
