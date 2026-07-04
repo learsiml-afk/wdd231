@@ -3,9 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 231 -  Web Frontend Development - Israel Martinez - Course Home Page">
+    <meta name="author" content="Israel Martinez">
+    <title>WDD 231 - Israel Martinez - Course Home Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+ 
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    
+ 
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/rocket.svg" alt="" class="brand-mark" width="32" height="32">
+      <span class="brand-name">Israel Martinez</span>
+    </div>
+    <button id="navToggle" class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryNav">
+      <span class="hamburger"></span>
+    </button>
+    <nav id="primaryNav" class="primary-nav">
+      <a href="index.html" class="nav-link current" aria-current="page">Home</a>
+      <a href="chamber/index.html" class="nav-link">Chamber Project</a>
+      <a href="final/index.html" class="nav-link">Final</a>
+    </nav>
+  </header>
+ 
+  <main>
+    <h1>Home</h1>
+    <p class="mission-line">WDD 231 — Web Frontend Development I</p>
+ 
+    <div class="grid-container">
+ 
+      <section class="card" id="about">
+        <h2>About Me</h2>
+        <div class="card-content">
+          <div class="about-top">
+            <p>I'm Israel Martinez, an undergraduate Software Development student with a
+              long-term goal of flying for NASA. I'm currently based in Tijuana, Baja California,
+              building the frontend fundamentals in this course as one step in that larger plan.</p>
+          </div>
+          <h3>Tijuana Baja California, Mexico</h3>
+          <hr>
+          <p>My home base sits right on the US–Mexico border. From here, my plan runs through
+            U.S. citizenship, a Navy officer commission, and eventually an astronaut application —
+            with this degree as the foundation.</p>
+        </div>
+      </section>
+ 
+      <section class="card" id="photo">
+        <h2>Student Photo</h2>
+        <div class="card-content photo-content">
+          <img src="images/profile.png" alt="Profile Photo Israel Martinez" class="student-photo">
+        </div>
+      </section>
+ 
+      <section class="card" id="courses">
+        <h2>Web Certificate Courses</h2>
+        <div class="card-content">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="All">All</button>
+            <button class="filter-btn" data-filter="CSE">CSE</button>
+            <button class="filter-btn" data-filter="WDD">WDD</button>
+          </div>
+          <div id="courseList" class="course-list" aria-live="polite"></div>
+          <p class="credit-readout">Total credits for courses displayed: <span id="totalCredits" class="mono">0</span></p>
+        </div>
+      </section>
+ 
+    </div>
+  </main>
+ 
+  <footer>
+    <div class="footer-social">
+      <a href="https://github.com/learsiml-afk" target="_blank" rel="noopener" aria-label="GitHub profile">
+        <img src="images/github.svg" alt="" width="22" height="22">
+      </a>
+      <a href="https://www.linkedin.com/in/israel-martinez-lopez/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <img src="images/linkedin.svg" alt="" width="22" height="22">
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram profile">
+        <img src="images/instagram.svg" alt="" width="22" height="22">
+      </a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> Israel Martinez &bull; Tijuana &amp; Tecate, Baja California, Mexico</p>
+    <p id="lastModified"></p>
+  </footer>
+ 
 </body>
 </html>

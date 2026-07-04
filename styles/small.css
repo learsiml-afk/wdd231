@@ -1,0 +1,231 @@
+
+:root {
+  --bg-color: #0b1220;
+  --card-color: #121b2e;
+  --border-color: #263353;
+  --orange: #ff6b35;
+  --blue: #4cc9f0;
+  --text-color: #e8ecf3;
+  --gray-text: #8b96ad;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--card-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-name {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+}
+
+.nav-toggle {
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  width: 40px;
+  height: 36px;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--text-color);
+  margin: 5px auto;
+}
+
+.primary-nav {
+  display: none;
+  flex-direction: column;
+  background-color: var(--card-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.primary-nav.open {
+  display: flex;
+}
+
+.nav-link {
+  padding: 12px 15px;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav-link:hover {
+  color: var(--orange);
+}
+
+.nav-link.current {
+  color: var(--orange);
+}
+
+main {
+  padding: 20px 15px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mission-line {
+  color: var(--gray-text);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card h2 {
+  border-bottom: 2px solid var(--orange);
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.card-content h3 {
+  color: var(--blue);
+  margin-bottom: 8px;
+}
+
+.card-content hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 15px 0;
+}
+
+.photo-content {
+  text-align: center;
+}
+
+.student-photo {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.filter-buttons {
+  margin-bottom: 15px;
+}
+
+.filter-btn {
+  background-color: var(--bg-color);
+  color: var(--gray-text);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 8px 14px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: var(--blue);
+  color: var(--bg-color);
+  border-color: var(--blue);
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.course-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.course-card.completed {
+  border-color: var(--orange);
+}
+
+.course-card.completed .course-id {
+  color: var(--orange);
+}
+
+.course-id {
+  color: var(--gray-text);
+  min-width: 65px;
+}
+
+.course-title {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.credit-readout {
+  margin-top: 15px;
+  color: var(--gray-text);
+}
+
+#totalCredits {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--card-color);
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--gray-text);
+  padding: 20px 15px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  display: block;
+  opacity: 0.8;
+}
+
+.footer-social a:hover {
+  opacity: 1;
+}
