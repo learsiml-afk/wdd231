@@ -2,20 +2,21 @@
   .nav-toggle {
     display: none;
   }
-
+ 
   .primary-nav {
     display: flex !important;
     flex-direction: row;
     margin-top: 0;
     gap: 1.5rem;
   }
-
+ 
   .primary-nav a {
     border-bottom: none;
   }
-
+ 
   #directory,
   #directory.grid {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
+ 
