@@ -1,0 +1,84 @@
+{
+  "members": [
+    {
+      "name": "Tacos El Franc",
+      "address": "Blvd. Sánchez Taboada 1130, Zona Río, Tijuana, B.C.",
+      "phone": "(664) 555-0142",
+      "url": "https://www.tacoselfranc.mx",
+      "image": "https://picsum.photos/id/292/400/300",
+      "level": 3,
+      "category": "Restaurant",
+      "tagline": "Border-style tacos since 1985"
+    },
+    {
+      "name": "Frontera Brewing Co.",
+      "address": "Av. Revolución 1421, Zona Centro, Tijuana, B.C.",
+      "phone": "(664) 555-0198",
+      "url": "https://www.fronterabrewing.mx",
+      "image": "https://picsum.photos/id/431/400/300",
+      "level": 2,
+      "category": "Brewery & Taproom",
+      "tagline": "Craft beer brewed on the border"
+    },
+    {
+      "name": "BajaTech Manufactura",
+      "address": "Parque Industrial El Florido, Tijuana, B.C.",
+      "phone": "(664) 555-0110",
+      "url": "https://www.bajatech.mx",
+      "image": "https://picsum.photos/id/201/400/300",
+      "level": 3,
+      "category": "Manufacturing",
+      "tagline": "Precision electronics assembly"
+    },
+    {
+      "name": "Hotel Pueblo Amigo",
+      "address": "Vía Oriente 9211, Zona Río, Tijuana, B.C.",
+      "phone": "(664) 555-0177",
+      "url": "https://www.hotelpuebloamigo.mx",
+      "image": "https://picsum.photos/id/164/400/300",
+      "level": 2,
+      "category": "Hospitality",
+      "tagline": "Your home away from home"
+    },
+    {
+      "name": "Estudio Arquitectura Zamora",
+      "address": "Calle 8va 3311, Zona Centro, Tijuana, B.C.",
+      "phone": "(664) 555-0163",
+      "url": "https://www.zamoraarquitectura.mx",
+      "image": "https://picsum.photos/id/28/400/300",
+      "level": 1,
+      "category": "Architecture",
+      "tagline": "Designing Tijuana's next skyline"
+    },
+    {
+      "name": "Café La Especial",
+      "address": "Av. Revolución 718, Zona Centro, Tijuana, B.C.",
+      "phone": "(664) 555-0155",
+      "url": "https://www.cafelaespecial.mx",
+      "image": "https://picsum.photos/id/225/400/300",
+      "level": 1,
+      "category": "Café",
+      "tagline": "Coffee roasted a block from the border"
+    },
+    {
+      "name": "Boutique Rosa Baja",
+      "address": "Paseo de los Héroes 9855, Zona Río, Tijuana, B.C.",
+      "phone": "(664) 555-0189",
+      "url": "https://www.rosabaja.mx",
+      "image": "https://picsum.photos/id/338/400/300",
+      "level": 2,
+      "category": "Retail",
+      "tagline": "Handmade fashion from Baja artisans"
+    },
+    {
+      "name": "Clínica Dental Sonrisa",
+      "address": "Blvd. Agua Caliente 4558, Aviación, Tijuana, B.C.",
+      "phone": "(664) 555-0121",
+      "url": "https://www.clinicasonrisa.mx",
+      "image": "https://picsum.photos/id/91/400/300",
+      "level": 3,
+      "category": "Healthcare",
+      "tagline": "Bilingual dental care for the whole family"
+    }
+  ]
+}
