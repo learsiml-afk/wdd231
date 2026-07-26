@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join | Tijuana Chamber of Commerce</title>
+  <meta name="description" content="Apply for membership with the Tijuana Chamber of Commerce.">
+  <meta name="author" content="Israel Martinez">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <meta property="og:title" content="Join | Tijuana Chamber of Commerce">
+  <meta property="og:description" content="Apply for membership with the Tijuana Chamber of Commerce.">
+  <meta property="og:image" content="https://learsiml-afk.github.io/wdd231/chamber/images/favicon.svg">
+  <meta property="og:url" content="https://learsiml-afk.github.io/wdd231/chamber/join.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-bar">
+      <p class="site-title">Tijuana Chamber of Commerce</p>
+      <button id="navToggle" class="nav-toggle">Menu</button>
+    </div>
+
+    <nav id="primaryNav" class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Business Directory</a>
+      <a href="join.html" aria-current="page">Join</a>
+      <a href="about.html">About</a>
+      <a href="podcast.html">Podcast</a>
+      <a href="events.html">Events</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Join the Chamber</h1>
+    <p>Complete the application below to apply for membership. Choose the level that fits your business, and review the benefits of each level using the cards to the side.</p>
+
+    <div class="join-layout">
+
+      <form action="thankyou.html" method="get" class="join-form">
+
+        <fieldset>
+          <legend>Applicant Information</legend>
+
+          <label for="firstName">
+            First Name
+            <input type="text" id="firstName" name="firstName" title="First Name" autocomplete="given-name" required>
+          </label>
+
+          <label for="lastName">
+            Last Name
+            <input type="text" id="lastName" name="lastName" title="Last Name" autocomplete="family-name" required>
+          </label>
+
+          <label for="orgTitle">
+            Organizational Title
+            <input type="text" id="orgTitle" name="orgTitle" title="Organizational Title" autocomplete="organization-title"
+              pattern="[A-Za-z\s\-]{7,}" placeholder="e.g. Marketing Director">
+          </label>
+
+          <label for="email">
+            Email Address
+            <input type="email" id="email" name="email" title="Email Address" autocomplete="email" placeholder="yourname@email.com" required>
+          </label>
+
+          <label for="mobile">
+            Mobile Phone Number
+            <input type="tel" id="mobile" name="mobile" title="Mobile Phone Number" autocomplete="tel" required>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Business Information</legend>
+
+          <label for="businessName">
+            Business/Organization Name
+            <input type="text" id="businessName" name="businessName" title="Business Name" autocomplete="organization" required>
+          </label>
+
+          <fieldset class="membership-levels">
+            <legend>Membership Level</legend>
+
+            <label class="radio-label">
+              <input type="radio" name="membershipLevel" value="np" checked>
+              NP Membership (no fee)
+            </label>
+
+            <label class="radio-label">
+              <input type="radio" name="membershipLevel" value="bronze">
+              Bronze Membership
+            </label>
+
+            <label class="radio-label">
+              <input type="radio" name="membershipLevel" value="silver">
+              Silver Membership
+            </label>
+
+            <label class="radio-label">
+              <input type="radio" name="membershipLevel" value="gold">
+              Gold Membership
+            </label>
+          </fieldset>
+
+          <label for="description">
+            Business Description
+            <textarea id="description" name="description" title="Business Description" rows="4" placeholder="Tell us about your business..."></textarea>
+          </label>
+        </fieldset>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <button type="submit">Submit Application</button>
+      </form>
+
+      <section class="membership-cards">
+
+        <article class="membership-card">
+          <h2>NP Membership</h2>
+          <p>For registered non-profit organizations.</p>
+          <a href="#" data-modal="npModal">Learn more</a>
+        </article>
+
+        <article class="membership-card">
+          <h2>Bronze Membership</h2>
+          <p>Our entry-level paid tier for growing businesses.</p>
+          <a href="#" data-modal="bronzeModal">Learn more</a>
+        </article>
+
+        <article class="membership-card">
+          <h2>Silver Membership</h2>
+          <p>Added visibility and event perks.</p>
+          <a href="#" data-modal="silverModal">Learn more</a>
+        </article>
+
+        <article class="membership-card">
+          <h2>Gold Membership</h2>
+          <p>Our top tier, with maximum exposure and benefits.</p>
+          <a href="#" data-modal="goldModal">Learn more</a>
+        </article>
+
+      </section>
+
+    </div>
+
+    <dialog id="npModal" class="benefits-modal">
+      <h2>NP Membership Benefits</h2>
+      <ul>
+        <li>Free membership for qualifying non-profits</li>
+        <li>Listing in the online business directory</li>
+        <li>Access to chamber networking events</li>
+      </ul>
+      <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="bronzeModal" class="benefits-modal">
+      <h2>Bronze Membership Benefits</h2>
+      <ul>
+        <li>All NP-level benefits</li>
+        <li>One event discount per quarter</li>
+        <li>Access to chamber training workshops</li>
+      </ul>
+      <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="silverModal" class="benefits-modal">
+      <h2>Silver Membership Benefits</h2>
+      <ul>
+        <li>All Bronze-level benefits</li>
+        <li>Priority event registration</li>
+        <li>Quarterly advertising placement on the chamber site</li>
+      </ul>
+      <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="goldModal" class="benefits-modal">
+      <h2>Gold Membership Benefits</h2>
+      <ul>
+        <li>All Silver-level benefits</li>
+        <li>Featured spotlight position on the home page</li>
+        <li>Unlimited event discounts</li>
+        <li>Dedicated chamber advertising support</li>
+      </ul>
+      <button class="close-modal">Close</button>
+    </dialog>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Tijuana Chamber of Commerce &middot; Blvd. Agua Caliente 4500, Tijuana, B.C.</p>
+    <p>Israel Martinez&middot; WDD 231</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+    <p>&copy; <span id="currentYear"></span> Tijuana Chamber of Commerce</p>
+  </footer>
+
+</body>
+</html>
