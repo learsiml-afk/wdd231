@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan - Exoplanet Explorer</title>
+  <meta name="description" content="Individual project site plan for Exoplanet Explorer, a WDD 231 final project exploring confirmed exoplanets using NASA data.">
+  <meta name="author" content="Israel Martinez">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <p class="eyebrow">WDD 231 &middot; Individual Project Site Plan</p>
+    <h1>Exoplanet Explorer</h1>
+    <p>A working plan for the individual final project: a dynamic site for browsing confirmed exoplanets using real NASA data.</p>
+  </header>
+
+  <main>
+
+    <section id="site-name">
+      <h2>Site Name</h2>
+      <p><strong>Exoplanet Explorer</strong></p>
+      <p class="reason">
+        The name states plainly what the site does: it lets a visitor explore planets outside our solar system.
+        It's short, easy to say out loud, and reads clearly as a space/science tool rather than a blog or store,
+        which matches the site's purpose of presenting real astronomical data.
+      </p>
+    </section>
+
+    <section id="site-purpose">
+      <h2>Site Purpose</h2>
+      <p class="purpose-item">
+        Exoplanet Explorer gives visitors an approachable way to browse confirmed exoplanets discovered by NASA
+        missions. The site lists planets with key details &mdash; size, distance from Earth, and discovery year &mdash;
+        and lets a visitor open any planet in a modal for a closer look. A saved favorites list, stored in the
+        browser via local storage, lets a returning visitor pick up where they left off without creating an account.
+      </p>
+    </section>
+
+    <section id="scenarios">
+      <h2>Scenarios</h2>
+      <p>Questions a visitor from the target audience &mdash; space enthusiasts, students, and amateur astronomers &mdash; might bring to the site:</p>
+      <ul class="reason">
+        <li>Which confirmed exoplanets are closest to Earth, and how far away are they in light-years?</li>
+        <li>How do I save a planet I find interesting so I can find it again later without searching from scratch?</li>
+      </ul>
+    </section>
+
+    <section id="color-scheme">
+      <h2>Color Scheme</h2>
+      <p>Three colors make up the palette. This site plan document uses only these colors.</p>
+      <div class="color-swatches">
+        <div class="swatch">
+          <div class="swatch-block" style="background-color: var(--space-navy);"></div>
+          <div class="swatch-info">
+            <strong>Space Navy &mdash; #0B0E1A</strong>
+            <span>Primary background across the site, evoking the darkness of space.</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background-color: var(--starlight-cyan);"></div>
+          <div class="swatch-info">
+            <strong>Starlight Cyan &mdash; #4FD1FF</strong>
+            <span>Headings, links, and interactive elements like buttons and the modal trigger.</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background-color: var(--exoplanet-gold);"></div>
+          <div class="swatch-info">
+            <strong>Exoplanet Gold &mdash; #FFB86B</strong>
+            <span>Small accents and highlights: favorited items, badges, and the eyebrow label.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="typography">
+      <h2>Typography</h2>
+      <p>Two fonts are selected for the site.</p>
+
+      <div class="font-sample">
+        <p class="font-role">Headings &mdash; Space Grotesk</p>
+        <h3>Kepler-186f</h3>
+        <p style="font-family: 'Space Grotesk', sans-serif; color: var(--muted-slate);">
+          Used for all headings (h1&ndash;h3), the site logo, and card titles. Its geometric, slightly technical
+          feel matches a data-driven science tool.
+        </p>
+      </div>
+
+      <div class="font-sample">
+        <p class="font-role">Body Text &mdash; Inter</p>
+        <p>
+          Used for paragraphs, list items, form labels, and modal descriptions. Inter stays highly readable at
+          small sizes, which matters since planet detail cards pack in several numeric data points.
+        </p>
+      </div>
+    </section>
+
+    <section id="wireframe">
+      <h2>Wireframe</h2>
+      <p>Hand-drawn black and white sketches of the home page, for a small (mobile) viewport and a wider (desktop/tablet) viewport.</p>
+      <div class="wireframe-grid">
+        <div class="wireframe-card">
+          <img src="wireframe-mobile.png" alt="Hand-drawn wireframe of the Exoplanet Explorer home page on a small mobile viewport">
+          <p>Mobile view (320px)</p>
+        </div>
+        <div class="wireframe-card">
+          <img src="wireframe-desktop.png" alt="Hand-drawn wireframe of the Exoplanet Explorer home page on a wider desktop/tablet viewport">
+          <p>Desktop / tablet view</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Exoplanet Explorer &mdash; Individual Project Site Plan &mdash; WDD 231</p>
+  </footer>
+
+</body>
+</html>
