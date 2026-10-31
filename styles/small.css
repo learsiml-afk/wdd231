@@ -193,6 +193,7 @@ main {
   border-radius: 6px;
   padding: 10px 12px;
 }
+
 .course-card.completed {
   border-color: var(--orange);
   background-color: rgba(255, 107, 53, 0.1);
