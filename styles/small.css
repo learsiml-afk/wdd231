@@ -193,9 +193,9 @@ main {
   border-radius: 6px;
   padding: 10px 12px;
 }
-
 .course-card.completed {
   border-color: var(--orange);
+  background-color: rgba(255, 107, 53, 0.1);
 }
 
 .course-card.completed .course-id {
@@ -215,6 +215,12 @@ main {
 .credit-readout {
   margin-top: 15px;
   color: var(--gray-text);
+
+}
+.course-check {
+  color: var(--orange);
+  font-weight: bold;
+  padding-right: 10px;
 }
 
 #totalCredits {
