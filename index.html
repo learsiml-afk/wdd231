@@ -9,12 +9,12 @@
     <meta name="author" content="Israel Martinez">
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
@@ -30,11 +30,11 @@
          <button id="navToggle" class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryNav">
          <span class="hamburger"></span>
         </button>
-        <nav>
-        <a>Home</a>
-        <a>Chamber Project</a>
-        <a>Final Project</a>
-        </nav>
+        <nav id="primaryNav" class="primary-nav">
+        <a href="index.html" class="nav-link current" aria-current="page">Home</a>
+        <a href="chamber/index.html" class="nav-link">Chamber Project</a>
+        <a href="#" class="nav-link">Final Project</a>
+</nav>
     </header>
 
     
@@ -55,9 +55,7 @@
           </div>
           <h3>Tijuana Baja California, Mexico</h3>
           <hr>
-          <p>My home base sits right on the US–Mexico border. From here, my plan runs through
-            U.S. citizenship, a Navy officer commission, and eventually an astronaut application —
-            with this degree as the foundation.</p>
+          <p>I am a software Engineering student with a specialized focus on Aerospace. My professional drive is rooted in the "exact sciences"—I thrive in environments where quantitative precision and structured problem-solving are the standard. Whether I’m designing a complex mechanical assembly or writing code, my goal is to build systems that are both high-performing and highly efficient.</p>
         </div>
       </section>
  
@@ -85,7 +83,7 @@
   </main>
 
     <footer>
-        <div class="footer-social"></div>
+    <div class="footer-social">
         <a href="https://github.com/learsiml-afk" target="_blank" rel="noopener" aria-label="GitHub profile">
             <img src="images/github.svg" alt="Github logo" width="22" height="22">
         </a>
@@ -95,7 +93,10 @@
         <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram profile">
             <img src="images/instagram.svg" alt="Instagram logo" width="22" height="22">
         </a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> Israel Martinez</p>
+    <p id="lastModified"></p>
+</footer>
 
-    </footer>
 </body>
 </html>
