@@ -40,18 +40,49 @@
     
 
     <main>
-        <h1> I'm Israel Martinez
-            
-        </h1>
-        <section class="card" id="photo">
-        <h2>Student Picture</h2>
-        <div class="card-contet picture">
-            <img src="images/profile.png" alt="Profile Picture Israel Martinez">
+    <h1>Home</h1>
+    <p class="mission-line">WDD 231 — Web Frontend Development I</p>
+ 
+    <div class="grid-container">
+ 
+      <section class="card" id="about">
+        <h2>About Me</h2>
+        <div class="card-content">
+          <div class="about-top">
+            <p>I'm Israel Martinez, an undergraduate Software Development student with a
+              long-term goal of flying for NASA. I'm currently based in Tijuana, Baja California,
+              building the frontend fundamentals in this course as one step in that larger plan.</p>
+          </div>
+          <h3>Tijuana Baja California, Mexico</h3>
+          <hr>
+          <p>My home base sits right on the US–Mexico border. From here, my plan runs through
+            U.S. citizenship, a Navy officer commission, and eventually an astronaut application —
+            with this degree as the foundation.</p>
         </div>
-        </section>
-
-
-    </main>
+      </section>
+ 
+      <section class="card" id="photo">
+        <h2>Student Photo</h2>
+        <div class="card-content photo-content">
+          <img src="images/profile.png" alt="Profile Photo Israel Martinez" class="student-photo">
+        </div>
+      </section>
+ 
+      <section class="card" id="courses">
+        <h2>Web Certificate Courses</h2>
+        <div class="card-content">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="All">All</button>
+            <button class="filter-btn" data-filter="CSE">CSE</button>
+            <button class="filter-btn" data-filter="WDD">WDD</button>
+          </div>
+          <div id="courseList" class="course-list" aria-live="polite"></div>
+          <p class="credit-readout">Total credits for courses displayed: <span id="totalCredits" class="mono">0</span></p>
+        </div>
+      </section>
+ 
+    </div>
+  </main>
 
     <footer>
         <div class="footer-social"></div>
