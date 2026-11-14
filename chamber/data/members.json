@@ -1,0 +1,84 @@
+{
+  "members": [
+    {
+      "name": "Tacos El Franc",
+      "address": "Blvrd Gral Rodolfo Sánchez Taboada 9257, Zonaeste, 22010 Tijuana, B.C.",
+      "phone": "(664) 555-0142",
+      "url": "https://tacoselfranc.com",
+      "image": "images/franc.jpg",
+      "level": 3,
+      "category": "Restaurant",
+      "tagline": "Border-style tacos since 1985"
+    },
+    {
+      "name": "TACOS EL TIJUANO",
+      "address": "Valles, Río Tijuana 3a. Etapa, Rio Tijuana 3ra Etapa, 22226 Tijuana, B.C.",
+      "phone": "(664) 809-9220",
+      "url": "https://www.facebook.com/TacosElTijuano",
+      "image": "images/tijuano.jpg",
+      "level": 2,
+      "category": "Restaurant",
+      "tagline": "Tijuana Coolest tacos"
+    },
+    {
+      "name": "Fabrica de Impresiones | Tijuana",
+      "address": "C. Real del Mar, Estrellas Del Pacifico, Portico de San Antonio, 22667 Tijuana, B.C.",
+      "phone": "(664)906-9982",
+      "url": "https://www.facebook.com/FabricaDeImpresiones/?locale=es_LA",
+      "image": "images/fabrica-impresiones.jpg",
+      "level": 3,
+      "category": "Printing & Office Supplies",      
+      "tagline": "Printing, packing, and everything between"
+    },
+    {
+      "name": "NASH Hot Chicken Sandwiches",
+      "address": "Blvrd Cuauhtemoc Sur Ote 1985, America, 22044 Tijuana, B.C.",
+      "phone": "(663)428-4618",
+      "url": "https://www.facebook.com/profile.php?id=61551528720516",
+      "image": "images/nash.jpg",
+      "level": 2,
+      "category": "Restaurant",
+      "tagline": "FAMOUS NASHVILLE CHICKEN"
+    },
+    {
+      "name": "Pauripaz Soluciones Fiscales",
+      "address": "Blvd. Gustavo Díaz Ordaz 4035, Luna Park, 22127 Tijuana, B.C.",
+      "phone": "(664) 873-1920",
+      "url": "https://pauripaz.com",
+      "image": "images/pauripaz.jpg",
+      "level": 1,
+      "category": "Accounting",
+      "tagline": "Taxes, payroll, and peace of mind"
+    },
+    {
+      "name": "Nalas Coffee Shop",
+      "address": "Blvd. Cuauhtemoc Sur Pte. 2133, Marron, 22015 Tijuana, B.C.",
+      "phone": "(664) 555-0155",
+      "url": "https://www.instagram.com/nalascoffee?igsh=MWtlZTljaGo0cTlieA%3D%3D&utm_source=qr",
+      "image": "images/nalas.jpg",
+      "level": 1,
+      "category": "Café",
+      "tagline": "Coffee roasted a block from the border"
+    },
+    {
+      "name": "Floreria El Ramo",
+      "address": "Av. Rio Bravo 9630, Marron, 22015 Tijuana, B.C.",
+      "phone": "(664)208-9488",
+      "url": "https://www.instagram.com/floreriaelramo/?hl=es",
+      "image": "images/elramo.jpg",
+      "level": 2,
+      "category": "Florist",
+      "tagline": "Handcrafted arrangements, delivered with love"
+    },
+    {
+      "name": "Clínica Dental VITA SMILE",
+      "address": "Blvrd Gral Rodolfo Sánchez Taboada 10512-Loc 7-B, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.",
+      "phone": "+(664)681-8118",
+      "url": "http://vitasmile.com.mx",
+      "image": "images/vitasmile.jpg",
+      "level": 3,
+      "category": "Healthcare",
+      "tagline": "Bilingual dental care for the whole family"
+    }
+  ]
+}
