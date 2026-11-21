@@ -10,7 +10,7 @@ document.querySelector("#currentYear").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent = document.lastModified;
 
 
-const API_KEY = "zpka_675a1f4cdc524933b0b0be7d04f8e6d6_aaa9fb71";
+const API_KEY = "6909deac8fae441fba7071a74ed278fd";
 const LAT = 32.5149;
 const LON = -117.0382;
 const BASE = "https://api.openweathermap.org/data/2.5";
