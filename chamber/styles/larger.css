@@ -43,4 +43,26 @@
   .confirmation-card dt {
     margin-top: 0;
   }
+
+  /* Home page */
+  .hero img {
+    height: 420px;
+  }
+
+  .hero-copy {
+    padding: 2rem max(2rem, calc((100% - 900px) / 2 + 1rem));
+  }
+
+  .hero-copy h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .spotlight-list {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
 }
