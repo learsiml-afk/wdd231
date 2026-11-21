@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Tijuana Chamber of Commerce</title>
+  <meta name="description" content="The Tijuana Chamber of Commerce connects local businesses with events, networking, and growth opportunities.">
+  <meta name="author" content="Israel Martinez">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <meta property="og:title" content="Home | Tijuana Chamber of Commerce">
+  <meta property="og:description" content="The Tijuana Chamber of Commerce connects local businesses with events, networking, and growth opportunities.">
+  <meta property="og:image" content="https://learsiml-afk.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://learsiml-afk.github.io/wdd231/chamber/index.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/index.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-bar">
+      <p class="site-title">Tijuana Chamber of Commerce</p>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+    </div>
+
+    <nav id="primaryNav" class="primary-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Business Directory</a>
+      <a href="join.html">Join</a>
+      <a href="about.html">About</a>
+      <a href="podcast.html">Podcast</a>
+      <a href="events.html">Events</a>
+    </nav>
+  </header>
+
+  <section class="hero" aria-labelledby="heroTitle">
+    <picture>
+      <source media="(min-width: 700px)" srcset="images/hero-large.webp" width="1400" height="600">
+      <img src="images/hero-small.webp" alt="Tijuana skyline at sunset with the city's arch in the foreground" width="800" height="600" fetchpriority="high">
+    </picture>
+    <div class="hero-copy">
+      <h1 id="heroTitle">Tijuana's businesses, better together</h1>
+      <a class="hero-cta" href="join.html">Become a member</a>
+    </div>
+  </section>
+
+  <main>
+    <div class="home-grid">
+
+      <section class="home-card events" aria-labelledby="eventsTitle">
+        <h2 id="eventsTitle">Current events</h2>
+        <ul class="event-list">
+          <li>
+            <h3>Monthly Networking Breakfast</h3>
+            <p>First Thursday of the month, 8:00 AM. Meet other members over coffee.</p>
+          </li>
+          <li>
+            <h3>Small Business Tax Workshop</h3>
+            <p>Learn what changes this year with a local accounting member.</p>
+          </li>
+          <li>
+            <h3>Member Open House</h3>
+            <p>Tour the chamber offices and meet the board. Free for all members.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="home-card weather" aria-labelledby="weatherTitle">
+        <h2 id="weatherTitle">Weather in Tijuana</h2>
+        <div id="currentWeather" aria-live="polite">
+          <p>Loading weather…</p>
+        </div>
+        <h3>3-day forecast</h3>
+        <ul id="forecast" class="forecast-list"></ul>
+      </section>
+
+    </div>
+
+    <section class="spotlights" aria-labelledby="spotTitle">
+      <h2 id="spotTitle">Member spotlights</h2>
+      <div id="spotlightList" class="spotlight-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Tijuana Chamber of Commerce &middot; Blvd. Agua Caliente 4500, Tijuana, B.C.</p>
+    <p>Israel Martinez &middot; WDD 231</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+    <p>&copy; <span id="currentYear"></span> Tijuana Chamber of Commerce</p>
+  </footer>
+
+</body>
+</html>
