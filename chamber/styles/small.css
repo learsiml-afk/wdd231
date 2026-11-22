@@ -150,7 +150,6 @@ main {
   margin: 0.2rem 0;
 }
 
-/* Join page */
 
 .join-layout {
   display: flex;
@@ -212,10 +211,10 @@ main {
   gap: 0.5rem;
 }
 
-.radio-label {
-  flex-direction: row !important;
+.join-form .radio-label {
+  flex-direction: row;
   align-items: center;
-  gap: 0.5rem !important;
+  gap: 0.5rem;
   font-weight: normal;
 }
 
@@ -340,9 +339,18 @@ main {
   margin: 0;
 }
 
-/* Home page */
+.home-main {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
 
-/* Hero */
+.home-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 .hero {
   position: relative;
   background-color: #1b4f72;
@@ -371,6 +379,10 @@ main {
   max-width: 22ch;
 }
 
+.hero-tagline {
+  margin-bottom: 0.75rem;
+}
+
 .hero-cta {
   display: inline-block;
   background-color: #ffc857;
@@ -387,7 +399,6 @@ main {
   outline-offset: 2px;
 }
 
-/* Home sections */
 .home-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -424,7 +435,6 @@ main {
   font-size: 0.9rem;
 }
 
-/* Weather */
 .current-row {
   display: flex;
   align-items: center;
@@ -451,7 +461,6 @@ main {
   font-weight: 600;
 }
 
-/* Spotlights */
 .spotlights {
   margin-top: 1.5rem;
 }

@@ -4,7 +4,7 @@
   }
  
   .primary-nav {
-    display: flex !important;
+    display: flex;
     flex-direction: row;
     margin-top: 0;
     gap: 1.5rem;
@@ -44,7 +44,6 @@
     margin-top: 0;
   }
 
-  /* Home page */
   .hero img {
     height: 420px;
   }

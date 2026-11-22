@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Tijuana Chamber of Commerce</title>
+  <title>Tijuana Chamber of Commerce | Home</title>
   <meta name="description" content="The Tijuana Chamber of Commerce connects local businesses with events, networking, and growth opportunities.">
   <meta name="author" content="Israel Martinez">
 
   <link rel="icon" href="images/favicon.ico">
 
-  <meta property="og:title" content="Home | Tijuana Chamber of Commerce">
+  <meta property="og:title" content="Tijuana Chamber of Commerce | Home">
   <meta property="og:description" content="The Tijuana Chamber of Commerce connects local businesses with events, networking, and growth opportunities.">
   <meta property="og:image" content="https://learsiml-afk.github.io/wdd231/chamber/images/og-image.png">
   <meta property="og:url" content="https://learsiml-afk.github.io/wdd231/chamber/index.html">
@@ -43,18 +43,21 @@
     </nav>
   </header>
 
+  <main class="home-main">
+
   <section class="hero" aria-labelledby="heroTitle">
     <picture>
       <source media="(min-width: 700px)" srcset="images/hero-large.webp" width="1400" height="600">
       <img src="images/hero-small.webp" alt="Tijuana skyline at sunset with the city's arch in the foreground" width="800" height="600" fetchpriority="high">
     </picture>
     <div class="hero-copy">
-      <h1 id="heroTitle">Tijuana's businesses, better together</h1>
+      <h1 id="heroTitle">Tijuana Chamber of Commerce</h1>
+      <p class="hero-tagline">Tijuana's businesses, better together</p>
       <a class="hero-cta" href="join.html">Become a member</a>
     </div>
   </section>
 
-  <main>
+  <div class="home-content">
     <div class="home-grid">
 
       <section class="home-card events" aria-labelledby="eventsTitle">
@@ -90,6 +93,7 @@
       <h2 id="spotTitle">Member spotlights</h2>
       <div id="spotlightList" class="spotlight-list"></div>
     </section>
+  </div>
   </main>
 
   <footer class="site-footer">
