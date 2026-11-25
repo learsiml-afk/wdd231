@@ -44,7 +44,7 @@
 
   <main>
     <h1 class="page-title">Join the Chamber</h1>
-    <p>Complete the application below to apply for membership. Choose the level that fits your business, and review the benefits of each level using the cards to the side.</p>
+    <p>Complete the application below to apply for membership. Choose the level that fits your business, and review the benefits of each level using the cards.</p>
 
     <div class="join-layout">
 
@@ -65,7 +65,7 @@
 
           <label for="orgTitle">
             Organizational Title
-            <input type="text" id="orgTitle" name="orgTitle" title="Organizational Title" autocomplete="organization-title"
+            <input type="text" id="orgTitle" name="orgTitle" title="Letters, spaces, and hyphens only, at least 7 characters" autocomplete="organization-title"
               pattern="[A-Za-z\s\-]{7,}" placeholder="e.g. Marketing Director">
           </label>
 
@@ -92,29 +92,29 @@
             <legend>Membership Level</legend>
 
             <label class="radio-label">
-              <input type="radio" name="membershipLevel" value="np" checked>
+              <input type="radio" name="membershipLevel" value="np" title="NP Membership" checked>
               NP Membership (no fee)
             </label>
 
             <label class="radio-label">
-              <input type="radio" name="membershipLevel" value="bronze">
+              <input type="radio" name="membershipLevel" value="bronze" title="Bronze Membership">
               Bronze Membership
             </label>
 
             <label class="radio-label">
-              <input type="radio" name="membershipLevel" value="silver">
+              <input type="radio" name="membershipLevel" value="silver" title="Silver Membership">
               Silver Membership
             </label>
 
             <label class="radio-label">
-              <input type="radio" name="membershipLevel" value="gold">
+              <input type="radio" name="membershipLevel" value="gold" title="Gold Membership">
               Gold Membership
             </label>
           </fieldset>
 
           <label for="description">
             Business Description
-            <textarea id="description" name="description" title="Business Description" rows="4" placeholder="Tell us about your business..."></textarea>
+            <textarea id="description" name="description" title="Business Description" autocomplete="off" rows="4" placeholder="Tell us about your business..."></textarea>
           </label>
         </fieldset>
 
