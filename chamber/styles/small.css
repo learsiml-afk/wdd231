@@ -203,7 +203,7 @@ main {
   outline-offset: 1px;
 }
 
-.join-form input:invalid:not(:placeholder-shown) {
+.join-form input:user-invalid {
   border-color: #b3261e;
 }
 
@@ -260,6 +260,14 @@ main {
     transform: translateY(0);
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .membership-card {
+    opacity: 1;
+    animation: none;
+  }
+}
+
 
 .membership-card h2 {
   color: #1b4f72;
